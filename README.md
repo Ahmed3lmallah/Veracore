@@ -1,2 +1,2 @@
-# Veracode
+# Veracore
 Just another demo project
