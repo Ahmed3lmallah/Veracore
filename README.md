@@ -63,6 +63,7 @@ Veracore design is based on modern cloud-native architecture, and it includes th
 ## Limitations
 
 * The tool currently only works for `mvn` projects, but it can be extended to include other project types
+* [Get repository content API](https://docs.github.com/en/rest/reference/repos#get-repository-content) can only be used with public repositories
 * For larger Git repos with many files and nested folders, the tool will likely experience throttling from Github Content API
 	* An alternative approach would be to clone the Repo and process it server-side
 * I am sure the tools is filled with bugs, but it's just a demo project. I hope you like it :)
