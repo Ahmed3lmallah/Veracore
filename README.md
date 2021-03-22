@@ -1,6 +1,6 @@
 # Veracore
 
-Veracore (not to be confused with Veracode) is a demo tool that can be used to scan Git repositories for opensource vulnerabilities.
+Veracore (not to be confused with Veracode) is a demo tool that can be used to scan public Github repositories for opensource vulnerabilities.
 
 ### Logic Flow
 
