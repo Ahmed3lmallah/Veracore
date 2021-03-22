@@ -17,11 +17,12 @@ Veracore design is based on modern cloud-native architecture, and it includes th
 1. Two backend micoservices that serve as the Data layer and used for fetching data from a PostgreSQL DB
 	1. **USER-SERVICE:** Fetches and validates user data - Initialized with the following users:
 	
-		![USER-SERVICE](./images/u-service.png)
+		![USER-SERVICE](./images/user-service.png)
 	1. **VULNERABILITIES-SERVICE:** Fetches vulnerabilities from DB - Initialized with the following vulnerability:
 	
 		![VULNERABILITIES-SERVICE](./images/v-service.png)
 1. **OPENSOURCE-SCANNER-SERVICE:** An edge micoservice, that collects data from differnt backend services, scan and fetch dependencies for a provided Github repo, and present the results to the user.
+
 	* Request Example: POST http://localhost:8191/scan
 	
 			{
@@ -33,7 +34,7 @@ Veracore design is based on modern cloud-native architecture, and it includes th
 			}
 			
 	* Result Example:
-	
+
 			{
 				"validUser": true,
 				"supportedLanguage": true,
