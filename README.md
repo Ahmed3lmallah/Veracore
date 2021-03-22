@@ -23,6 +23,7 @@ Veracore design is based on modern cloud-native architecture, and it includes th
 		![VULNERABILITIES-SERVICE](./images/v-service.png)
 1. **OPENSOURCE-SCANNER-SERVICE:** An edge micoservice, that collects data from differnt backend services, scan and fetch dependencies for a provided Github repo, and present the results to the user.
 	* Request Example: POST http://localhost:8191/scan
+	
 			{
 				"userName":"ahmed",
 				"gitRepositoryOwner":"Ahmed3lmallah",
@@ -30,7 +31,9 @@ Veracore design is based on modern cloud-native architecture, and it includes th
 				"gitRepositoryBranch":"master",
 				"projectLanguage":"mvn"
 			}
+			
 	* Result Example:
+
 			{
 				"validUser": true,
 				"supportedLanguage": true,
