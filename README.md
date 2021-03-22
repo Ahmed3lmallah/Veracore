@@ -10,7 +10,7 @@ Veracore design is based on modern cloud-native architecture, and it includes th
 
 1. **CONFIG-SERVER:** A Configuration Server to host all configuration files
 	
-	![CONFIG-SERVER](./images/config.png)
+	![CONFIG-SERVER](./images/config-server.png)
 1. **REGISTRY-SERVICE:** Eureaka Service Registry for server-side load balancing
 
 	![REGISTRY-SERVICE](./images/eureka.png)
