@@ -2,6 +2,14 @@
 
 Veracore (not to be confused with Veracode) is a demo tool that can be used to scan Git repositories for opensource vulnerabilities.
 
+### Logic Flow
+
+* Username is first validated (checked that it exists in the users DB, as opposed to actually using OAuth2), and the project language is checked to ensure it's among the list of supported languages
+* The tool uses the [Get repository content API](https://docs.github.com/en/rest/reference/repos#get-repository-content) to locate dependencies files for a given project. For a maven project, the tool will use the API to locate and download the contents of all `pom.xml` files
+* `Jackson` is then used to convert the content of the `.xml` file to a list of dependencies
+* Each dependency is then checked against the Vulnerabilites DB using the Vulnerabilities Service
+* Any finding is then returned to the user
+
 ## Architecture
 
 Veracore design is based on modern cloud-native architecture, and it includes the following microservices:
